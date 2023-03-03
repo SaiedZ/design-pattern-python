@@ -1,3 +1,15 @@
+"""
+The Single Responsibility Principle (SRP) is a principle of
+object-oriented design that states that a class should have
+only one reason to change. In other words, a class should have
+only one responsibility and should not be responsible for more
+than one thing. This helps to make the class easier to understand,
+modify, and maintain, as well as promoting good design practices
+such as modularity and separation of concerns. By adhering to
+the SRP, developers can create more robust and maintainable code
+that is easier to extend and refactor over tim
+"""
+
 class Journal:
     def __init__(self):
         self.entries = []
