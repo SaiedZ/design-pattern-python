@@ -11,7 +11,7 @@ code that is easier to maintain, extend, and reuse over time.
 
 from abc import ABC
 from enum import Enum
-
+from dataclasses import dataclass
 
 class Color(Enum):
     RED = 1
@@ -25,11 +25,11 @@ class Size(Enum):
     LARGE = 3
 
 
+@dataclass
 class Product:
-    def __init__(self, name, color, size):
-        self.name = name
-        self.color = color
-        self.size = size
+    name: str
+    color: Color
+    size: Size
 
 
 class ProductFilter:
