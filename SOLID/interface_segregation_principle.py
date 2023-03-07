@@ -11,7 +11,6 @@ from abc import abstractmethod
 
 # Example 1
 
-
 class Machine:
     def print(self, document):
         raise NotImplementedError()
